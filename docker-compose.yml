@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: docker/fastapi/Dockerfile
+    container_name: app-fastapi
+    volumes:
+      - ./:/var/www
+    ports:
+      - "5000:5000"
+  redis:
+    image: redis
+    container_name: app-redis
+    restart: always
+    command: --loglevel verbose
