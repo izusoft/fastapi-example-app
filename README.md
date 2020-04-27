@@ -2,7 +2,7 @@
 App example FastApi + Redis + Docker with environment settings via .env file
 ### Installing
 ```
-git clone https://github.com/zubarevski/FastApi-example-app
+git clone https://github.com/zubarevski/fastapi-example-app
 cd FastApi-example-app
 ```
 Then create `.env` file (or rename and modify `.env.example`) in project root and set environment variables for application.
